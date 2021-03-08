@@ -1,17 +1,21 @@
 import {Injectable} from '@angular/core';
 import {ParsedUrl} from '../interfaces/parsed-url';
-import {Observable, of} from 'rxjs';
+import {Observable} from 'rxjs';
+import {SpotifyService} from './spotify.service';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ConverterService {
 
-  constructor() {
+  constructor(private readonly spotifyService: SpotifyService) {
   }
 
 
-  parseUrl(value: string): Observable<ParsedUrl | null> {
-    return of(null);
+  parseUrl(value: string): Observable<ParsedUrl> {
+    return this.spotifyService.parseUrl(value)
+      .pipe(
+        // catchError(() => {})
+      );
   }
 }
