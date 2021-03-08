@@ -1,0 +1,54 @@
+.expandable-button {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: var(--expandable-button-height);
+
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-size: 0.75rem;
+  outline: none;
+  border: none;
+  background: var(--expandable-button-bg);
+  color: var(--expandable-button-text-color);
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+
+  &:hover:not(:disabled) {
+    .expandable-button__text {
+      animation: hover-button 200ms ease-out;
+      opacity: 1;
+      width: auto;
+      margin-right: 5px;
+    }
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    --expandable-button-bg: grey;
+  }
+
+  &__text {
+    width: 0;
+    opacity: 0;
+    overflow-x: hidden;
+  }
+}
+
+@keyframes hover-button {
+  from {
+    opacity: 0;
+    width: 0;
+    margin-right: 0;
+  }
+  to {
+    opacity: 1;
+    width: auto;
+    margin-right: 5px;
+  }
+}

@@ -1,0 +1,4 @@
+<button class="expandable-button" [disabled]="disabled" (click)="hasClicked()">
+  <span class="expandable-button__text"><ng-content></ng-content></span>
+  <img class="expandable-button__icon" [alt]="iconAlt" [src]="iconSrc"/>
+</button>

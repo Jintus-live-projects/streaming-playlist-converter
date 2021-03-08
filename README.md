@@ -1,27 +1,20 @@
-# PlaylistConverter
+# Playlist conveter
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.3.
+Lors de mes streams sur [Twitch](https://www.twitch.tv/jintuslive) je développe des applications (console, web ou
+mobile), utiles, dans le but de transmettre mes connaissances et de partager avec ma communauté la réalisation de tels
+applications. Si vous souhaitez participer de près ou de loin à ce processus, n’hésitez pas à me rejoindre
+sur [Twitch](https://www.twitch.tv/jintuslive) et/ou à rejoindre notre [Discord](https://discord.gg/3UHtnRPKaR) pour
+partager vos idées.
 
-## Development server
+Aujourd’hui, il existe de nombreux services de streaming musical : Deezer, Spotify, Apple Music pour ne citer que les
+plus populaires. Chacun de ces services proposent un grand catalogue de musiques (partagé pour la plus grande majorité),
+mais surtout un vaste catalogue de playlists musicales. Malheureusement, pour la plupart de ces playlists, elles ne sont
+disponibles que sur un seul de ces services. Chacun de ces services étant payant, il est souvent décevant de trouver une
+playlist qui nous intéresse mais pas chez le service de notre choix. Notre outil a donc pour objectif de pouvoir
+convertir des playlists d’un service source à destination d’un service cible (ex. Playlist Spotify vers une playlist
+Apple Music). Notre outil supportera dans un premier temps les services Spotify et Apple Music (et peut être Deezer). Ce
+sera un projet open source et pourra évoluer par la suite pour d’autres services.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Install & run
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Run `npm install` then `npm start` or `ng serve`

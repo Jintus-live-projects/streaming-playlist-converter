@@ -1,0 +1,25 @@
+.card {
+  width: 100%;
+
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-right: none;
+  border-bottom: none;
+  border-radius: 1.875em;
+  background: linear-gradient(100.57deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: inset 24px -24px 24px rgba(175, 175, 175, 0.154), inset -24px 24px 24px rgba(255, 255, 255, 0.154);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+
+  & section, footer {
+    padding: 1.25em;
+
+    &:empty {
+      display: none;
+    }
+  }
+
+  footer {
+    background-color: #ffffff;
+    border-radius: 0 0 1.875em 1.875em;
+  }
+}
